@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css?family=Chivo);
+@import url(https://fonts.googleapis.com/css?family=Tajawal);
+
+.mycontainer,
+.mycontainer2 {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.mycontainer2 {
+    margin: 0 10rem;
+    grid-template-columns: 50% 50%;
+    height: 100%;
+    grid-gap: 2rem;
+}
+
+.title,
+.text,
+.price,
+.imgposition,
+.starposition {
+    text-align: center;
+}
+
+.starposition {
+    display: flex;
+    margin: 0 5rem 0 5rem;
+    justify-content: space-around;
+}
+
+.title {
+    font-size: 1.2rem;
+}
+
+.text {
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    line-height: 1.7;
+    color: #888;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.img,
+.img_size {
+    max-width: 80%;
+}
+
+.img_size2 {
+    margin-bottom: 6rem;
+    width: 75%;
+}
+
+.img-content {
+    text-align: center;
+    align-self: center;
+}
+
+.img-content2,
+.review-content2 {
+    grid-column: span 2;
+    text-align: center;
+    align-self: center;
+    width: 100%;
+}
+
+.cart-form {
+    display: flex;
+}
+
+.cartbutton {
+    display: inherit;
+    border: 1px solid #aaa;
+    border-right: 0px;
+    border-radius: 100px 0 0 100px;
+    height: 3rem;
+    margin-top: 1.5rem;
+    width: 35%;
+}
+
+.count {
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+    font-weight: normal;
+}
+
+.cartbutton-content-position {
+    width: 1.5rem;
+}
+
+.cartbutton-up,
+.cartbutton-down {
+    border-left: 1px solid #aaa;
+    height: 50%;
+    width: 100%;
+    cursor: pointer;
+}
+
+i.icon {
+    margin: 0;
+}
+
+.cartbutton-down {
+    border-top: 1px solid #aaa;
+}
+
+.addcartbutton {
+    border: 1px solid #aaa;
+    border-left: 0px;
+    border-radius: 0 100px 100px 0;
+    height: 3rem;
+    margin-top: 1.5rem;
+    width: 65%;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.addcartbutton p {
+    margin-top: 0.7rem;
+}
+
+.review-title {
+    letter-spacing: 1.5px;
+    line-height: 2rem;
+    font-size: 2.0rem;
+    margin: 0 0 2rem 0;
+    font-weight: bold;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.review-slogan {
+    line-height: 2rem;
+    font-size: 1.5rem;
+    margin: 1rem 0 1rem 0;
+    font-weight: 100;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.review-comment {
+    line-height: 2rem;
+    font-size: 1.15rem;
+    margin: 0 0 1rem 0;
+    color: #888;
+}
