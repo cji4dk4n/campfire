@@ -4,65 +4,41 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+[Windows]:
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### `npm start` 於GitHub抓下來後的開啟方式
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+1. 開啟cmd
+2. 轉至 campfire 資料夾
+3. 鍵入 'npm start' 啟動專案
 
-### `npm test`
+### `npm start` from /jsonserver
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+資料內容: 
 
-### `npm run build`
+1. 須開啟另一cmd視窗 
+2. 轉至 campfire/jsonserver 資料夾
+3. 鍵入 'npm start' 啟動簡易資料庫 
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[Mac]: 
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+由於此案是經由Windows環境建立，於Mac開啟可能會有不可預期的錯誤
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+保證一定可以安全觀看專案的方式是經由 Mac 終端機，使用Create-react-app建立一個新專案，流程為:
 
-### `npm run eject`
+1. 安裝node.js: 可於網路上抓取並安裝，會一併安裝套件管理軟體 "npm"，之後可開啟Mac終端鍵入 'npm -v'查看是否有安裝成功，如成功會有版本別顯示
+2. 安裝create-react-app: 於終端機中鍵入"npm i -g create-react-app"安裝
+3. 建立一個新的專案: 於終端機鍵入'create-react-app [你想要的名稱，建議都小寫英文，不要有特殊符號]'  ex: create-react-app campfire
+   之後會詢問一些設置，可一路Enter到底即可
+   ps: 建議先移動到自己所創建好的資料夾再執行，假設在桌面有新建的資料夾，可於終端機鍵入 ex:"cd desktop/[你的資料夾名稱]"
+4. 專案建立好後將裡面src內容移除，將GitHub中的src資料夾與package.json下載並複製於建立好的專案中
+5. 終端機切換到專案的目錄後鍵入"npm i"，可將我有使用的套件安裝好
+6. 終端機鍵入"npm start"啟動即可
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+資料內容部分
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+1. 建立一個新的資料夾，看自己要設定在哪，假設桌面，終端機鍵入 ex:"cd desktop/[你的資料夾名稱]" 以移動到此路徑
+2. 移動好後於終端機輸入 "npm init" 初始化一個專案，之後會詢問一些設置，可一路Enter到底即可，這時資料夾中會有一個檔案名為"package.json"
+3. 安裝jsonserver: 於終端機輸入 "npm i -s jsonserver"
+4. 將GitHub的專案中的jsonserver/package.json及db.json複製到自己桌面的資料夾中
+5. 終端機鍵入"npm start"啟動簡易資料庫
