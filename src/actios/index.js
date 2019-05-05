@@ -22,7 +22,7 @@ export const fetchProduct = id => async dispatch => {
 export const fetchSearchProducts = (keyWord) => async dispatch => {
     const response = await products.get('/products')
     const data = response.data
-    const reg = new RegExp(keyWord)
+    const reg = new RegExp(keyWord, "i")
     const searchData =
         data.map(data => {
             let arrayData = Object.values(data)
@@ -31,7 +31,9 @@ export const fetchSearchProducts = (keyWord) => async dispatch => {
             }
             return null
         })
+    //console.log(searchData)
     const finalData = _.filter(searchData, null)
+    //console.log(finalData)
     dispatch({ type: FETCH_SEARCH_PRODUCTS, payload: finalData })
     history.push(`/shop/search/${keyWord}`)
 }
