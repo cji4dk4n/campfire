@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import '../../css/productlist.css'
 
 class RenderList extends Component {
+
     renderList() {
         //console.log(this.props)
         const { products, search } = this.props
@@ -24,10 +25,15 @@ class RenderList extends Component {
         })
     }
     render() {
+        const { products, search } = this.props
+        const length = this.props.name === 'list' ? products.length : search.length
         return (
-            <>
-                {this.renderList()}
-            </>
+            <div className="list-align">
+                <div className="list-results">Showing {length} results</div>
+                <div className="list-container">
+                    {this.renderList()}
+                </div>
+            </div>
         )
     }
 }
