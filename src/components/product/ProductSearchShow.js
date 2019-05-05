@@ -1,30 +1,24 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import RenderList from '../product/RenderList'
 
 class ProductSearchShow extends Component {
 
-    renderSearch() {
-        return this.props.search.map(data => {
-            return (
-                <div key={data.id}>
-                    {data.title}
-                </div>
-            )
-        })
-    }
-
     render() {
-        //console.log(this.props)
+        console.log(this.props.products)
         return (
-            <div>
-                {this.renderSearch()}
+            <div className="list-align">
+                <div className="list-results">Showing {this.props.products.length} results</div>
+                <div className="list-container">
+                    <RenderList name="search" />
+                </div>
             </div>
         )
     }
 }
 
 const mapStateToProps = state => {
-    return { search: Object.values(state.search) }
+    return { products: Object.values(state.search) }
 }
 
 export default connect(mapStateToProps)(ProductSearchShow)
