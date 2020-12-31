@@ -1,28 +1,27 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import { fetchSearchProducts } from '../../actios/index'
 import { connect } from 'react-redux'
 
-class SearchBar extends Component {
+const SearchBar = (props) => {
+    const [keyWord, setKeyWord] = useState('')
 
-    state = {
-        keyWord: ''
-    }
-
-    onSubmit = (e) => {
+    const onSubmit = (e) => {
         e.preventDefault()
-        this.props.fetchSearchProducts(this.state.keyWord)
+        props.fetchSearchProducts(keyWord)
     }
 
-    render() {
-        return (
-            <form onSubmit={this.onSubmit}>
-                <div className="ui icon input">
-                    <input type="text" placeholder="Search..." onChange={e => this.setState({ keyWord: e.target.value })} />
-                    <i className="search link icon"></i>
-                </div>
-            </form>
-        )
+    const handlerKeyWord = e => {
+        setKeyWord(e.target.value)
     }
+
+    return (
+        <form onSubmit={onSubmit}>
+            <div className="ui icon input">
+                <input type="text" placeholder="Search..." onChange={handlerKeyWord} />
+                <i className="search link icon"></i>
+            </div>
+        </form>
+    )
 }
 
 export default connect(null, { fetchSearchProducts })(SearchBar)

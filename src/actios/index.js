@@ -1,7 +1,8 @@
 import {
     FETCH_PRODUCTS,
     FETCH_PRODUCT,
-    FETCH_SEARCH_PRODUCTS
+    FETCH_SEARCH_PRODUCTS,
+    TOGGLE_TODO
 } from './types'
 import products from '../apis/products'
 import history from '../history'
@@ -36,4 +37,9 @@ export const fetchSearchProducts = (keyWord) => async dispatch => {
     //console.log(finalData)
     dispatch({ type: FETCH_SEARCH_PRODUCTS, payload: finalData })
     history.push(`/shop/search/${keyWord}`)
+}
+
+
+export const toggleTodo = index => dispatch => {
+    dispatch({ type: TOGGLE_TODO, index })
 }

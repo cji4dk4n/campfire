@@ -1,11 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 import RenderList from '../product/RenderList'
 
-export default class ProductSearchShow extends Component {
-
-    render() {
-        return (
-            <RenderList name="search" />
-        )
-    }
+const ProductSearchShow = () => {
+    return (
+        <RenderList name="search" />
+    )
 }
+
+export default ProductSearchShow

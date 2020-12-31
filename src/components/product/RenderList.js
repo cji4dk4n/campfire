@@ -1,15 +1,14 @@
-import React, { Component } from 'react'
+import React from 'react'
 import history from '../../history'
 import { connect } from 'react-redux'
 import '../../css/productlist.css'
 
-class RenderList extends Component {
+const RenderList = (props) => {
 
-    renderList() {
-        //console.log(this.props)
-        const { products, search } = this.props
-        const action = this.props.name === 'list' ? products : search
-        return action.map(data => {
+    const renderList = () => {
+        const { products, search, name } = props
+        const list = name === 'list' ? products : search
+        return list.map(data => {
             return (
                 <div className="item" key={data.id} onClick={() => history.push(`/shop/${data.id}`)}>
                     <div className="plus">＋</div>
@@ -24,18 +23,21 @@ class RenderList extends Component {
             )
         })
     }
-    render() {
-        const { products, search } = this.props
-        const length = this.props.name === 'list' ? products.length : search.length
-        return (
-            <div className="list-align">
-                <div className="list-results">Showing {length} results</div>
-                <div className="list-container">
-                    {this.renderList()}
-                </div>
-            </div>
-        )
+
+    const resultCount = () => {
+        const { products, search, name } = props
+        const length = name === 'list' ? products.length : search.length
+        return length
     }
+
+    return (
+        <div className="list-align">
+            <div className="list-results">Showing {resultCount()} results</div>
+            <div className="list-container">
+                {renderList()}
+            </div>
+        </div>
+    )
 }
 
 
