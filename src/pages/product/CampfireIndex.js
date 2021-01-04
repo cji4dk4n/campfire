@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import '../../css/campfireIndex.css'
-import history from '../../history'
+import './css/campfireIndex.css'
+import history from '../../utils/history'
 
 
 const CampfireIndex = (props) => {

@@ -1,7 +1,7 @@
 import {
     FETCH_PRODUCTS,
     FETCH_PRODUCT
-} from '../actios/types'
+} from '../actions/types'
 import _ from 'lodash'
 
 export default (state = {}, action) => {

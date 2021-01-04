@@ -1,6 +1,6 @@
 import {
     TOGGLE_TODO
-} from '../actios/types'
+} from '../actions/types'
 
 export default (state = {}, action) => {
     switch (action.type) {

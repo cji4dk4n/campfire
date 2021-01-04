@@ -1,6 +1,6 @@
 import {
     FETCH_SEARCH_PRODUCTS
-} from '../actios/types'
+} from '../actions/types'
 
 export default (state = {}, action) => {
     switch (action.type) {

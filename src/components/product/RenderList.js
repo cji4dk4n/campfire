@@ -1,13 +1,19 @@
 import React from 'react'
-import history from '../../history'
+import history from '../../utils/history'
 import { connect } from 'react-redux'
-import '../../css/productlist.css'
+import './renderList.css'
 
 const RenderList = (props) => {
+    const { products, search, action } = props
 
     const renderList = () => {
-        const { products, search, name } = props
-        const list = name === 'list' ? products : search
+        let list = []
+        switch (action) {
+            case 'normal': list = products; break
+            case 'search': list = search; break
+            default: list = []; break
+        }
+
         return list.map(data => {
             return (
                 <div className="item" key={data.id} onClick={() => history.push(`/shop/${data.id}`)}>
@@ -25,8 +31,7 @@ const RenderList = (props) => {
     }
 
     const resultCount = () => {
-        const { products, search, name } = props
-        const length = name === 'list' ? products.length : search.length
+        const length = action === 'search' ? search.length : products.length
         return length
     }
 

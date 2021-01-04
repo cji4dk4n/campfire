@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { connect } from 'react-redux'
-import { fetchProduct } from '../../actios/index'
-import '../../css/productShow.css'
+import { fetchProduct } from '../../actions/index'
+import './css/productDetail.css'
 
 const ProductShow = (props) => {
 
@@ -21,11 +21,12 @@ const ProductShow = (props) => {
     }
 
     const yellowStar = () => {
-        let star = []
-        for (let i = 0; i < 5; i++) {
-            star.push(<i className="star yellow icon" key={i}></i>)
+        const { star } = props.product.review
+        let starShow = []
+        for (let i = 0; i < star; i++) {
+            starShow.push(<i className="star yellow icon" key={i}></i>)
         }
-        return star
+        return starShow
     }
 
     const renderContent = () => {

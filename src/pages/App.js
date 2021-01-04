@@ -1,12 +1,12 @@
 import React from 'react'
-import ProductList from './product/ProductList'
-import ProductShow from './product/ProductShow'
+import ProductShop from './product/ProductShop'
+import ProductDetail from './product/ProductDetail'
 import ProductSearchShow from './product/ProductSearchShow'
 import CampfireIndex from './product/CampfireIndex'
-import Header from './Header'
-import Footer from './Footer'
+import Header from '../components/header/Header'
+import Footer from '../components/footer/Footer'
 import { Router, Switch, Route } from 'react-router-dom'
-import history from '../history'
+import history from '../utils/history'
 
 
 const App = () => {
@@ -17,9 +17,9 @@ const App = () => {
           <Header />
           <Switch>
             <Route path={'/'} exact component={CampfireIndex} />
-            <Route path={'/shop'} exact component={ProductList} />
-            <Route path={'/shop/:id'} exact component={ProductShow} />
-            <Route path={'/shop/search/:id'} exact component={ProductSearchShow} />
+            <Route path={'/shop'} exact component={ProductShop} />
+            <Route path={'/shop/:id'} exact component={ProductDetail} />
+            <Route path={'/shop/search/:keyWord'} exact component={ProductSearchShow} />
           </Switch>
           <Footer />
         </>

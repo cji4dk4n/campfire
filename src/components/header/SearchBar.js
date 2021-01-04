@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
-import { fetchSearchProducts } from '../../actios/index'
 import { connect } from 'react-redux'
+import { searchShow } from '../../utils/searchShow'
 
 const SearchBar = (props) => {
     const [keyWord, setKeyWord] = useState('')
 
     const onSubmit = (e) => {
         e.preventDefault()
-        props.fetchSearchProducts(keyWord)
+        searchShow(props.products, keyWord)(props.dispatch)
     }
 
     const handlerKeyWord = e => {
@@ -18,10 +18,14 @@ const SearchBar = (props) => {
         <form onSubmit={onSubmit}>
             <div className="ui icon input">
                 <input type="text" placeholder="Search..." onChange={handlerKeyWord} />
-                <i className="search link icon"></i>
+                <i className="search link icon" onClick={onSubmit}></i>
             </div>
         </form>
     )
 }
 
-export default connect(null, { fetchSearchProducts })(SearchBar)
+const mapStateToProps = (state) => {
+    return { products: Object.values(state.products) }
+}
+
+export default connect(mapStateToProps)(SearchBar)

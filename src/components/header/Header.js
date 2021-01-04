@@ -1,13 +1,16 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
-import { fetchProducts, toggleTodo } from '../actios/index'
-import SearchBar from './product/SearchBar'
-import '../css/header.css'
+import { fetchProducts, toggleTodo } from '../../actions/index'
+import SearchBar from './SearchBar'
+import './header.css'
+import { FETCH_PRODUCTS } from '../../actions/types'
 
 const Header = (props) => {
     useEffect(() => {
-        props.fetchProducts()
+        props.fetchProducts().then(res => {
+            res.dispatch({ type: FETCH_PRODUCTS, payload: res.resData.data })
+        })
         props.toggleTodo(false)
     }, [])
 
@@ -23,8 +26,6 @@ const Header = (props) => {
         })
     }
 
-    console.log(props.toggle)
-    console.log(props.products)
     return (
         <div className="ui secondary massive menu">
             <Link to={'/'} className="blockSize">
