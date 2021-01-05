@@ -1,9 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { connect } from 'react-redux'
 import { searchShow } from '../../utils/searchShow'
 
 const SearchBar = (props) => {
     const [keyWord, setKeyWord] = useState('')
+
+    useEffect(() => { searchShow(props.products, keyWord)(props.dispatch) }, [keyWord])
 
     const onSubmit = (e) => {
         e.preventDefault()
