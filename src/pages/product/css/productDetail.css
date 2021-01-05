@@ -92,10 +92,6 @@
     font-weight: normal;
 }
 
-.cartbutton-content-position {
-    width: 1.5rem;
-}
-
 .cartbutton-up,
 .cartbutton-down {
     border-left: 1px solid #aaa;

@@ -46,7 +46,7 @@ const ProductShow = (props) => {
                     <form className="cart-form">
                         <div className="cartbutton">
                             <div className="count">{count}</div>
-                            <div className="cartbutton-content-position">
+                            <div>
                                 <div className="cartbutton-up" onClick={increase}><i className="chevron up icon"></i></div>
                                 <div className="cartbutton-down" onClick={decrease}><i className="chevron down icon"></i></div>
                             </div>
