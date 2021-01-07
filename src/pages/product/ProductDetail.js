@@ -1,16 +1,10 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState } from 'react'
 import { connect } from 'react-redux'
-import { fetchProduct } from '../../actions/index'
+import actions from '../../actions/index'
 import './css/productDetail.css'
 
 const ProductShow = (props) => {
-
     const [count, setCount] = useState(0)
-
-    useEffect(() => {
-        const id = props.match.params.id
-        props.fetchProduct(id)
-    }, [])
 
     const increase = () => {
         setCount(count + 1)
@@ -98,6 +92,8 @@ const ProductShow = (props) => {
     }
 
 }
+
+const { fetchProduct } = actions
 
 const mapStateToProps = (state, ownProps) => {
     return { product: state.products[ownProps.match.params.id]}

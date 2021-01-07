@@ -1,19 +1,44 @@
 import React, { useState, useEffect } from 'react'
 import { connect } from 'react-redux'
-import { searchShow } from '../../utils/searchShow'
+import history from '../../utils/history'
+import actions from '../../actions/index'
+import _ from 'lodash'
 
 const SearchBar = (props) => {
     const [keyWord, setKeyWord] = useState('')
-
-    useEffect(() => { searchShow(props.products, keyWord)(props.dispatch) }, [keyWord])
+    
+    useEffect(() => {
+        searchShow(props.products, keyWord)
+    }, [keyWord])
 
     const onSubmit = (e) => {
         e.preventDefault()
-        searchShow(props.products, keyWord)(props.dispatch)
+        searchShow(props.products, keyWord)
+        history.push('/shop')
     }
 
     const handlerKeyWord = e => {
         setKeyWord(e.target.value)
+    }
+
+    const searchShow = (products, keyWord) => {
+        if (keyWord === '') { 
+            props.searchText(keyWord)
+            return
+        }
+    
+        const reg = new RegExp(keyWord, "i")
+        const searchData = products.map(data => {
+                let arrayData = Object.values(data)
+                if (reg.test(arrayData)) {
+                    return data
+                }
+                return null
+            })
+        const finalData = _.filter(searchData, null)
+    
+        props.searchText(keyWord)
+        props.fetchSearchProducts(finalData)
     }
 
     return (
@@ -26,8 +51,10 @@ const SearchBar = (props) => {
     )
 }
 
+const { searchText, fetchSearchProducts } = actions
+
 const mapStateToProps = (state) => {
     return { products: Object.values(state.products) }
 }
 
-export default connect(mapStateToProps)(SearchBar)
+export default connect(mapStateToProps, { searchText, fetchSearchProducts })(SearchBar)

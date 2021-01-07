@@ -1,27 +1,22 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
-import { fetchProducts, toggleTodo } from '../../actions/index'
+import actions from '../../actions/index'
 import SearchBar from './SearchBar'
 import './header.css'
-import { FETCH_PRODUCTS } from '../../actions/types'
+import { FETCH_PRODUCTS } from '../../constants/types'
 
 const Header = (props) => {
     useEffect(() => {
         props.fetchProducts().then(res => {
             res.dispatch({ type: FETCH_PRODUCTS, payload: res.resData.data })
         })
-        props.toggleTodo(false)
     }, [])
-
-    const handlerClick = () => {
-        props.toggleTodo(props.toggle)
-    }
 
     const renderHeader = () => {
         return props.products.map(product => {
             return (
-                <Link to={`/shop/${product.id}`} className="two wide column item" key={product.id}>{product.title}</Link>
+                <Link to={`/detail/${product.id}`} className="two wide column item" key={product.id}>{product.title}</Link>
             )
         })
     }
@@ -45,13 +40,14 @@ const Header = (props) => {
                     </div>
                 </div>
             </div>
-            <button onClick={handlerClick}>{String(props.toggle)}</button>
         </div>
     )
 }
 
+const { fetchProducts } = actions
+
 const mapStateToProps = state => {
-    return { products: Object.values(state.products), toggle: state.toggle }
+    return { products: Object.values(state.products) }
 }
 
-export default connect(mapStateToProps, { fetchProducts, toggleTodo })(Header)
+export default connect(mapStateToProps, { fetchProducts })(Header)
