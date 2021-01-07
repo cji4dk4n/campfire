@@ -12,7 +12,7 @@ const RenderList = (props) => {
 
         return list.map(data => {
             return (
-                <div className="item" key={data.id} onClick={() => history.push(`/shop/${data.id}`)}>
+                <div className="item" key={data.id} onClick={() => history.push(`/detail/${data.id}`)}>
                     <div className="plus">＋</div>
                     <div className="list-img-container"><img className="list-img1" alt="" src={data.review.imgSrc[0]} /></div>
                     <div className="list-img-container"><img className="list-img2" alt="" src={data.review.imgSrc[1]} /></div>
