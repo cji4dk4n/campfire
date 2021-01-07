@@ -7,6 +7,7 @@ import Footer from '../components/footer/Footer'
 import { connect } from 'react-redux'
 import { Router, Switch, Route } from 'react-router-dom'
 import history from '../utils/history'
+import './App.css'
 
 
 const App = () => {
