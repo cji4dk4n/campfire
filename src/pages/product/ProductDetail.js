@@ -81,7 +81,11 @@ const ProductShow = (props) => {
     }
 
     if (!props.product) {
-        return <div>Loading...</div>
+        return (
+            <div className="productDetailLoading">
+                <div className="productDetailLoadingText">Loading...</div>
+            </div>
+        )
     } else {
         return (
             <div>

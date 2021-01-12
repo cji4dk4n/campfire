@@ -14,7 +14,7 @@ const SearchBar = (props) => {
     const onSubmit = (e) => {
         e.preventDefault()
         searchShow(props.products, keyWord)
-        history.push('/shop')
+        history.push('/shop/search')
     }
 
     const handlerKeyWord = e => {
@@ -22,23 +22,21 @@ const SearchBar = (props) => {
     }
 
     const searchShow = (products, keyWord) => {
-        if (keyWord === '') { 
-            props.searchText(keyWord)
+        props.loadingAction(true)
+        if (keyWord === '') {
             return
         }
-    
+        
         const reg = new RegExp(keyWord, "i")
         const searchData = products.map(data => {
                 let arrayData = Object.values(data)
-                if (reg.test(arrayData)) {
-                    return data
-                }
+                if (reg.test(arrayData)) return data
                 return null
             })
         const finalData = _.filter(searchData, null)
-    
-        props.searchText(keyWord)
-        props.fetchSearchProducts(finalData)
+        const dataObj = {finalData, keyWord}
+        props.fetchSearchProducts(dataObj)
+        history.push('/shop/search')
     }
 
     return (
@@ -51,10 +49,10 @@ const SearchBar = (props) => {
     )
 }
 
-const { searchText, fetchSearchProducts } = actions
+const { fetchSearchProducts, loadingAction } = actions
 
 const mapStateToProps = (state) => {
     return { products: Object.values(state.products) }
 }
 
-export default connect(mapStateToProps, { searchText, fetchSearchProducts })(SearchBar)
+export default connect(mapStateToProps, { fetchSearchProducts, loadingAction })(SearchBar)

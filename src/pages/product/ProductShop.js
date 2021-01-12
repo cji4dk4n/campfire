@@ -1,18 +1,35 @@
 import React from 'react'
 import history from '../../utils/history'
 import { connect } from 'react-redux'
+import Loading from './Loading'
 import './css/ProductShop.css'
 
 const RenderList = (props) => {
-    const { products, search } = props
-    const keyWord = search.keyWord
+    const { products, search, loading } = props
+    const isSearch = search.keyWord && props.match.path === '/shop/search'
+    const resultCount = () => isSearch ? search.searchProduct.length : products.length
+    const isProductEmpty = resultCount() === 0
+    const showProductClass = () => loading ? 'product-disappear' : 'product-shower'
+    const searchStatus = () => {
+        if (loading) return 'Now Search...'
+        else if (isProductEmpty) return 'Sorry! No product found!'
+        else return `Showing ${resultCount()} results`
+    }
+
+    const renderLoading = () => {
+        let loadingItem = []
+        for (let i = 0; i < 9; i++) {
+            loadingItem.push(<Loading key={i + 'loading'} />)
+        }
+        return loadingItem
+    }
 
     const renderList = () => {
-        const list = keyWord ? search.searchProduct : products
+        const list = isSearch ? search.searchProduct : products
 
         return list.map(data => {
             return (
-                <div className="item" key={data.id} onClick={() => history.push(`/detail/${data.id}`)}>
+                <div className={showProductClass()} key={data.id} onClick={() => history.push(`/detail/${data.id}`)}>
                     <div className="plus">＋</div>
                     <div className="list-img-container"><img className="list-img1" alt="" src={data.review.imgSrc[0]} /></div>
                     <div className="list-img-container"><img className="list-img2" alt="" src={data.review.imgSrc[1]} /></div>
@@ -26,13 +43,11 @@ const RenderList = (props) => {
         })
     }
 
-    const resultCount = () => keyWord ? search.searchProduct.length : products.length
-
     return (
         <div className="list-align">
-            <div className="list-results">Showing {resultCount()} results</div>
+            <div className="list-results">{searchStatus()}</div>
             <div className="list-container">
-                {renderList()}
+                { loading || isProductEmpty ? renderLoading() : renderList() }
             </div>
         </div>
     )
@@ -42,7 +57,8 @@ const RenderList = (props) => {
 const mapStateToProps = (state) => {
     return {
         products: Object.values(state.products),
-        search: state.search
+        search: state.search,
+        loading: state.loading.loading
     }
 }
 

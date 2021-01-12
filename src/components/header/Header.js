@@ -7,9 +7,13 @@ import './header.css'
 import { FETCH_PRODUCTS } from '../../constants/types'
 
 const Header = (props) => {
+    // 故意這樣寫的，模擬loading的感覺
     useEffect(() => {
         props.fetchProducts().then(res => {
-            res.dispatch({ type: FETCH_PRODUCTS, payload: res.resData.data })
+            setTimeout(() => {
+                res.dispatch({ type: FETCH_PRODUCTS, payload: res.resData.data })
+                props.loadingAction(false)
+            }, 3000)
         })
     }, [])
 
@@ -44,10 +48,10 @@ const Header = (props) => {
     )
 }
 
-const { fetchProducts } = actions
+const { fetchProducts, loadingAction } = actions
 
 const mapStateToProps = state => {
     return { products: Object.values(state.products) }
 }
 
-export default connect(mapStateToProps, { fetchProducts })(Header)
+export default connect(mapStateToProps, { fetchProducts, loadingAction })(Header)
