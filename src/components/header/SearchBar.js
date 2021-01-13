@@ -24,6 +24,7 @@ const SearchBar = (props) => {
     const searchShow = (products, keyWord) => {
         props.loadingAction(true)
         if (keyWord === '') {
+            props.fetchSearchProducts({finalData: [], keyWord: ''})
             return
         }
         
@@ -49,10 +50,8 @@ const SearchBar = (props) => {
     )
 }
 
-const { fetchSearchProducts, loadingAction } = actions
-
 const mapStateToProps = (state) => {
     return { products: Object.values(state.products) }
 }
 
-export default connect(mapStateToProps, { fetchSearchProducts, loadingAction })(SearchBar)
+export default connect(mapStateToProps, actions)(SearchBar)

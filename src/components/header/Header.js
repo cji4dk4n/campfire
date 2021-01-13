@@ -48,10 +48,8 @@ const Header = (props) => {
     )
 }
 
-const { fetchProducts, loadingAction } = actions
-
 const mapStateToProps = state => {
     return { products: Object.values(state.products) }
 }
 
-export default connect(mapStateToProps, { fetchProducts, loadingAction })(Header)
+export default connect(mapStateToProps, actions)(Header)

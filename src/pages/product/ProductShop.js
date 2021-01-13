@@ -9,7 +9,6 @@ const RenderList = (props) => {
     const isSearch = search.keyWord && props.match.path === '/shop/search'
     const resultCount = () => isSearch ? search.searchProduct.length : products.length
     const isProductEmpty = resultCount() === 0
-    const showProductClass = () => loading ? 'product-disappear' : 'product-shower'
     const searchStatus = () => {
         if (loading) return 'Now Search...'
         else if (isProductEmpty) return 'Sorry! No product found!'
@@ -29,7 +28,7 @@ const RenderList = (props) => {
 
         return list.map(data => {
             return (
-                <div className={showProductClass()} key={data.id} onClick={() => history.push(`/detail/${data.id}`)}>
+                <div className="product-shower" key={data.id} onClick={() => history.push(`/detail/${data.id}`)}>
                     <div className="plus">＋</div>
                     <div className="list-img-container"><img className="list-img1" alt="" src={data.review.imgSrc[0]} /></div>
                     <div className="list-img-container"><img className="list-img2" alt="" src={data.review.imgSrc[1]} /></div>

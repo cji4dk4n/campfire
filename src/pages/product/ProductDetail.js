@@ -97,10 +97,8 @@ const ProductShow = (props) => {
 
 }
 
-const { fetchProduct } = actions
-
 const mapStateToProps = (state, ownProps) => {
     return { product: state.products[ownProps.match.params.id]}
 }
 
-export default connect(mapStateToProps, { fetchProduct })(ProductShow)
+export default connect(mapStateToProps, actions)(ProductShow)
