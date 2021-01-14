@@ -1,11 +1,14 @@
 .footer-main-container {
-    position: relative;
+    position: fixed;
+    width: 100%;
     background: #555;
+    bottom: 0px;
+    z-index: 100;
 }
 
 .footer-container {
     display: flex;
-    height: 13rem;
+    height: 10rem;
     justify-content: center;
     align-items: center;
     background: #555;
@@ -13,7 +16,7 @@
 }
 
 .footer-item-container {
-    max-width: 10rem;
+    max-width: 9rem;
     margin: 0.5rem;
 }
 

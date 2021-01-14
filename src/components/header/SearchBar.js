@@ -23,7 +23,7 @@ const SearchBar = (props) => {
 
     const searchShow = (products, keyWord) => {
         props.loadingAction(true)
-        if (keyWord === '') {
+        if (keyWord === '' || !/[a-zA-Z]/.test(keyWord)) {
             props.fetchSearchProducts({finalData: [], keyWord: ''})
             return
         }

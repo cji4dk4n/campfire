@@ -3,7 +3,7 @@ import loadingImage from '../../static/media/product-loading.gif'
 
 const Loading = () => {
     const style = {
-        width: '80%',
+        width: '100%',
         margin: '10px 0'
     }
 

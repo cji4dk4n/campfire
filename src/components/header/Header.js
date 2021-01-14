@@ -1,22 +1,10 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
-import actions from '../../actions/index'
 import SearchBar from './SearchBar'
 import './header.css'
-import { FETCH_PRODUCTS } from '../../constants/types'
 
 const Header = (props) => {
-    // 故意這樣寫的，模擬loading的感覺
-    useEffect(() => {
-        props.fetchProducts().then(res => {
-            setTimeout(() => {
-                res.dispatch({ type: FETCH_PRODUCTS, payload: res.resData.data })
-                props.loadingAction(false)
-            }, 3000)
-        })
-    }, [])
-
     const renderHeader = () => {
         return props.products.map(product => {
             return (
@@ -52,4 +40,4 @@ const mapStateToProps = state => {
     return { products: Object.values(state.products) }
 }
 
-export default connect(mapStateToProps, actions)(Header)
+export default connect(mapStateToProps)(Header)

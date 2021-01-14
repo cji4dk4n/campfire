@@ -2,3 +2,7 @@ html,
 body {
     width: 100vw;
 }
+
+.mainBody {
+    padding-bottom: 12rem;
+}
