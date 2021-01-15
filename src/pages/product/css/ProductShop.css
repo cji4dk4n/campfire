@@ -1,6 +1,7 @@
 .list-align {
     position: relative;
     margin: 1rem 8rem 0 8rem;
+    min-width: 720px;
 }
 
 
@@ -32,7 +33,7 @@
 }
 
 .loading-shower {
-    height: 25rem;
+    overflow: hidden;
 }
 
 .plus,

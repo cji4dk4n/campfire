@@ -8,29 +8,27 @@ const Header = (props) => {
     const renderHeader = () => {
         return props.products.map(product => {
             return (
-                <Link to={`/detail/${product.id}`} className="two wide column item" key={product.id}>{product.title}</Link>
+                <Link to={`/detail/${product.id}`} className="productHref" key={product.id}>{product.title}</Link>
             )
         })
     }
 
     return (
-        <div className="ui secondary massive menu">
-            <Link to={'/'} className="blockSize">
-                <img alt=""
-                    src="https://campfireaudio.com/wp-content/uploads/2016/05/cropped-admin-ajax.png"
-                    className="logo"
-                />
-            </Link>
-            <div className="ui grid container">
-                <div className="ui secondary menu">
-                    <Link to={'/shop'} className="two wide column item">Shop</Link>
-                    {renderHeader()}
-                    <div className="right menu">
-                        <div className="item">
-                            <SearchBar />
-                        </div>
-                    </div>
-                </div>
+        <div className="main-header">
+            <div className="header-logo">
+                <Link to={'/'} className="blockSize">
+                    <img alt=""
+                        src="https://campfireaudio.com/wp-content/uploads/2016/05/cropped-admin-ajax.png"
+                        className="logo"
+                    />
+                </Link>
+            </div>
+            <div className="header-item">
+                <Link to={'/shop'} className="productHref">Shop</Link>
+                {renderHeader()}
+            </div>
+            <div className="header-searhBar">
+                <SearchBar />
             </div>
         </div>
     )

@@ -4,6 +4,7 @@ import loadingImage from '../../static/media/product-loading.gif'
 const Loading = () => {
     const style = {
         width: '100%',
+        height: '90%',
         margin: '10px 0'
     }
 

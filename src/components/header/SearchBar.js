@@ -3,6 +3,8 @@ import { connect } from 'react-redux'
 import history from '../../utils/history'
 import actions from '../../actions/index'
 import _ from 'lodash'
+import searchIcon from '../../static/media/search-icon.gif'
+import './searchBar.css'
 
 const SearchBar = (props) => {
     const [keyWord, setKeyWord] = useState('')
@@ -42,9 +44,9 @@ const SearchBar = (props) => {
 
     return (
         <form onSubmit={onSubmit}>
-            <div className="ui icon input">
-                <input type="text" placeholder="Search..." onChange={handlerKeyWord} />
-                <i className="search link icon" onClick={onSubmit}></i>
+            <input className="searchBar-input" type="text" placeholder="Search..." onChange={handlerKeyWord} />
+            <div className="search-icon-container">
+                <img className="search-icon" alt="" src={searchIcon} onClick={onSubmit} />
             </div>
         </form>
     )

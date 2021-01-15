@@ -9,7 +9,9 @@ const CampfireIndex = (props) => {
         return props.products.map(data => {
             return (
                 <div key={data.id} className="cd-fixed-bg" style={{ backgroundImage: `url(${data.imgSrc.srca})` }}>
-                    <img className="img-size" alt="" src={data.imgSrc.srcb} onClick={() => history.push(`/shop/${data.id}`)} />
+                    <div className="indexImgBox">
+                        <img className="img-size" alt="" src={data.imgSrc.srcb} onClick={() => history.push(`/shop/${data.id}`)} />
+                    </div>
                 </div>
             )
         })
