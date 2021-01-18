@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { connect } from 'react-redux'
 import actions from '../../actions/index'
+import {ReactComponent as SvgStar} from '../../static/media/star.svg'
 import './css/productDetail.css'
 
 const ProductShow = (props) => {
@@ -18,7 +19,11 @@ const ProductShow = (props) => {
         const { star } = props.product.review
         let starShow = []
         for (let i = 0; i < star; i++) {
-            starShow.push(<i className="star yellow icon" key={i}></i>)
+            starShow.push(
+                <div className="starSvg-container">
+                    <SvgStar className="starSvg" alt="starSvg"/>
+                </div>
+            )
         }
         return starShow
     }
@@ -40,9 +45,9 @@ const ProductShow = (props) => {
                     <form className="cart-form">
                         <div className="cartbutton">
                             <div className="count">{count}</div>
-                            <div>
-                                <div className="cartbutton-up" onClick={increase}><i className="chevron up icon"></i></div>
-                                <div className="cartbutton-down" onClick={decrease}><i className="chevron down icon"></i></div>
+                            <div className="inc-dec">
+                                <div className="cartbutton-up" onClick={increase}>+</div>
+                                <div className="cartbutton-down" onClick={decrease}>-</div>
                             </div>
                         </div>
                         <div className="addcartbutton"><p>Add to cart</p></div>

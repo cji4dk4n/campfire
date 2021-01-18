@@ -28,7 +28,6 @@
 
 .starposition {
     display: flex;
-    margin: 0 5rem;
     justify-content: center;
 }
 
@@ -159,4 +158,17 @@ i.icon {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 30px;
+}
+
+.inc-dec {
+    width: 20%;
+    user-select: none;
+}
+
+.starSvg-container {
+    margin: 0 5px;
+}
+
+.starSvg {
+    fill: rgb(225, 210, 8);
 }
