@@ -11,13 +11,13 @@
 .search-icon-container {
     cursor: pointer;
     display: inline-block;
-    position: relative;
-    left: -34px;
+    position: absolute;
+    right: 10px;
     width: 7%;
 }
 
 .search-icon {
     vertical-align: middle;
-    width: 100%;
+    width: 120%;
     height: 100%;
 }

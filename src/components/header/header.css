@@ -1,6 +1,7 @@
 .main-header {
-    min-width: 1920px;
+    min-width: 1450px;
     line-height: 60px;
+
 }
 
 .header-logo {
@@ -53,5 +54,6 @@
 
 .header-searhBar {
     display: inline-block;
-    margin-left: 100px;
+    position: relative;
+    right: -100px;
 }

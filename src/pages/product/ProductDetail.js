@@ -58,10 +58,9 @@ const ProductShow = (props) => {
     }
 
     const renderReview = () => {
-        const { review } = props.product
         const { title, slogan, comment, imgSrc } = props.product.review
         let reviewItem = []
-        for (let i = 0; i < review.title.length; i++) {
+        for (let i = 0; i < title.length; i++) {
             const reviewLayout =
                 <div className={i === 2 ? "img-content2" : "img-content"}>
                     <img alt="" src={imgSrc[i]} className={i === 2 ? "img_size2" : "img_size"} />
