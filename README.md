@@ -1,7 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## 作品內容看這裡
-(https://cji4dk4n.github.io/campfire/)
+https://cji4dk4n.github.io/campfire/
 
 ## Available Scripts
 
