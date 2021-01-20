@@ -5,6 +5,7 @@ import history from '../../utils/history'
 
 
 const CampfireIndex = (props) => {
+    console.log(props);
     const renderProducts = () => {
         return props.products.map(data => {
             return (

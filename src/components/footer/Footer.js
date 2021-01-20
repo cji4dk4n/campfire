@@ -1,7 +1,7 @@
 import React from 'react'
 import './footer.css'
 
- const Footer = () => {
+const Footer = () => {
   return (
     <div className="footer-main-container">
       <div className="footer-container">
@@ -10,7 +10,7 @@ import './footer.css'
         <div className="footer-item-container"><img alt="" className="footer-item" src="https://cdn-images-1.medium.com/max/2600/1*eQLe7T33KNr82vcT378oPQ.jpeg" /></div>
         <div className="footer-item-container"><img alt="" className="footer-item" src="https://fuzati.com/wp-content/uploads/2016/12/CSS-Logo.png" /></div>
         <div className="footer-item-container"><img alt="" className="footer-item" src="https://catalin.red/dist/uploads/2011/01/css3-html5-logo-initial.png" /></div>
-        <div className="footer-item-container"><img alt="" className="footer-item" src="http://www.devacron.com/wp-content/uploads/2016/02/ES6-ecmascript6-logo.jpg" /></div>
+        <div className="footer-item-container"><img alt="" className="footer-item" src="https://www.devacron.com/wp-content/uploads/2016/02/ES6-ecmascript6-logo.jpg" /></div>
       </div>
       <div className="footer-name-container"><h3> 2019. Yu Chen, Ho Present</h3></div>
     </div>
