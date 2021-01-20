@@ -1,0 +1,293 @@
+{
+    "products": [
+        {
+            "title": "Solaris",
+            "description": "Discover a new frontier of sound. Explore excellence in sonic reproduction. Designed and hand assembled in Portland, Oregon USA.",
+            "review": {
+                "title": [
+                    "Introducing Solaris",
+                    "Super Sonic",
+                    "Carefully Considered Creation",
+                    "Constructing a Classic",
+                    "Introducing Super Litz"
+                ],
+                "slogan": [
+                    "New Dimensions of Sound, Technology, and Construction",
+                    "New Dimensions of Sound, Technology, and Construction",
+                    "Mixing from our palate of audio technologies, a sonic masterpiece emerged.",
+                    "Crafted by hand from years of experience",
+                    "An exceptional earphone deserves an exceptional cable"
+                ],
+                "comment": [
+                    "Pushing ourselves to discover what is possible, we explored the outer horizon and found something exceptional; Solaris. Solaris is the summation of our experience creating earphones and the acoustic technologies we’ve developed and discovered along the way. It delivers a sound that is second to none",
+                    "Holographic presentation. Intimate detail retrieval. Soaring highs, engaging mids and impactful bass. Music sounds like music with lifelike performances, superior layering and unbelievable imaging. The traditional wall between high end two-channel hi-fi and personal audio just got thinner.",
+                    "By incorporating our many individual acoustic technologies into Solaris we were able to create an exceptional earphone. Solaris is a hybrid design, blending the best of the balanced armature performance with the physicality of dynamic drivers. It features 2 custom balanced armature drivers paired with our T.A.E.C for extended highs, without sibilance or fatigue. A larger single rear-ported balanced armature driver provides rich delivery of mid frequencies. A specially tuned version of our 10mm A.D.L.C. dynamic driver, optimized with our Polarity Tuned Chamber, anchors the sonic performance with deeply engaging mid-frequency tonality and visceral bass response.",
+                    "Each pair of Solaris is hand assembled in our Portland, Oregon workshop. Our team of skilled builders pours their time and attention into each earphone they construct. The attention to detailed paid throughout the process ensures your Solaris will be a world-class earphone unlike any other.",
+                    "Our new Super Litz cable is made from four large conductors of Silver-plated Copper Litz wire. Each conductor is individually comprised of a selected set of particular diameter strands. The Super Litz cable is the perfect balance of physical gauge and performance. The cable is terminated with our custom beryllium/copper MMCX connectors and over-molded 3.5mm plug. This cable brings out the best in Solaris."
+                ],
+                "imgSrc": [
+                    "https://campfireaudio.com/wp-content/uploads/2018/09/Solaris-3-1400x1400.jpg",
+                    "https://campfireaudio.com/wp-content/uploads/2018/09/Solaris-2-Update-1024x1024.jpg",
+                    "https://campfireaudio.com/wp-content/uploads/2018/09/Solaris-Box-Image-1-1024x769.png",
+                    "https://campfireaudio.com/wp-content/uploads/2018/09/Solaris-3-1024x1024.jpg",
+                    "https://campfireaudio.com/wp-content/uploads/2018/09/Super-Litz-for-Solaris-CFA-1024x1024.jpg"
+                ],
+                "star": 5
+            },
+            "imgSrc": {
+                "srca": "https://campfireaudio.com/wp-content/uploads/2018/10/Solaris-Stars.jpg",
+                "srcb": "https://campfireaudio.com/wp-content/uploads/2018/10/Solaris-Home-Page-CFA-1024x1024.jpg"
+            },
+            "price": "$1499.00",
+            "id": 1
+        },
+        {
+            "title": "Andromeda",
+            "description": "Andromeda exudes a unique confidence in its handling of fine musical detail, expanding the limits your listening horizon. Designed and hand assembled in Portland, Oregon USA.Back in Stock April 26th",
+            "review": {
+                "title": [
+                    "Simply Exceptional",
+                    "Confident Companion",
+                    "Specs",
+                    "Classic Green",
+                    "New Case + New Cable"
+                ],
+                "slogan": [
+                    "Andromeda combines all of the best elements of our earphone design experience into a single set of earphones. The result is a remarkable and unique sounding earphone with superior top-to-bottom coherence.",
+                    "Andromeda exudes confidence in its handling of musical detail.",
+                    "Established in 2006, Audio Line Out (“ALO”) made its name by building high end audio cables for audio equipment.",
+                    "Zirconium blasted aluminum shells are finished in our signature green anodizing; specially made for Andromeda.",
+                    "Building from our Silver Plated Copper Litz wire conductors and our popular tangle-resistant twisted cable weave, we’ve added a new stylish Smoky jacket to compliment the unique finish of our new line of earphones. A new light-weight molded ear-hook design replaces the memory wire. The result is a light weight cable that is a pleasure to use everyday."
+                ],
+                "comment": [
+                    "This refresh raises the bar on this audiophile classic. A refined body, new cable and new case elevate the Andromeda to new heights of excellence.",
+                    "It has high frequency extension that makes cymbals sparkle and expand past your listening horizon. Mids are fully resolved and uncolored. And the bass is extended and balanced; rich in texture and well defined.",
+                    "Frequency Range – 10HZ–28 KHZ Sensitivity – 115 DB SPL/MW Impedance – 12.8 OHMS @ 1KHZ Detachable Cable with MMCX Connection Type",
+                    "",
+                    "Our exciting new premium ‘Green’ leather protective zipper case is an update to our standard leather earphone case. Luxurious leather surrounds a substantial and protective rubber barrier that ensures that your earphones will remain safe while in transit. The interior is a dense faux wool lining that preserves the anodized finish of your earphones. Each case is made in Portugal by a small team of skilled crafts people that share our commitment to quality."
+                ],
+                "imgSrc": [
+                    "https://campfireaudio.com/wp-content/uploads/2016/04/New-Andromeda-1024x1024.png",
+                    "https://campfireaudio.com/wp-content/uploads/2016/04/New-Andromeda-3-1024x1024.png",
+                    "https://accessibleaudio.files.wordpress.com/2016/08/img_7595.jpg?w=736",
+                    "https://campfireaudio.com/wp-content/uploads/2016/04/New-Andromeda-Back-1024x1024.png",
+                    "https://campfireaudio.com/wp-content/uploads/2019/04/Smoky-Grey-Cable-for-Web-1024x1024.png"
+                ],
+                "star": 5
+            },
+            "imgSrc": {
+                "srca": "https://campfireaudio.com/wp-content/uploads/2016/04/Andromeda-Background-Pattern-e1519686690226.jpg",
+                "srcb": "https://campfireaudio.com/wp-content/uploads/2018/02/Andromeda-1080x450-1024x427.png"
+            },
+            "price": "$1099.00",
+            "id": 2
+        },
+        {
+            "title": "Equinox",
+            "description": "Campfire Audio Custom Fit In-Ear Monitor Limited to 100 units for Spring 2019 ",
+            "review": {
+                "title": [
+                    "Equinox a Custom fit IEM from Campfire Audio.",
+                    "Solid Body Design",
+                    "",
+                    "Stainless Steel Driver Housing",
+                    "New Pure Silver Cable"
+                ],
+                "slogan": [
+                    "We’ve been hard at work making a really cool new custom fit earphone: Equinox.",
+                    "Our new custom fit design is a direct print solid body design. We create the exterior design from a scan of the impression and apply our unique shaping formulas.",
+                    "",
+                    "The distincitve stainless steel housing captures the dyamic driver and provides the heart of Equinox.",
+                    "We’ve included our new pure silver cable litz cable to get the very best sound possible from the Equinox. The pure silver litz conductors provide additional resolution and refinement to an already exceptional sound. We found the pairing of the 10mm A.D.L.C. dynamic driver with this cable really makes the music shine."
+                ],
+                "comment": [
+                    "The result is a terrific sounding earphone with a solid body design and something new; a custom fit. Currently this is a ‘beta’ product available in very limited quantity in select markets. Designed and Assembled in Portland, Oregon USA. Contact us at Support@CampfireAudio.com if you have questions about this program.",
+                    "Then the internal accoustic chambers are incorporated into the 3D model. This gives each earphone the best sound possible with optimized pathways.",
+                    "",
+                    "This adds a certain roubustness to the earphone’s sonic signature and provides an additional level of protection for the earphone.",
+                    "This cable is also wound with a twist that reduces tangling and microphonics improving your daily experience with Equinox."
+                ],
+                "imgSrc": [
+                    "https://campfireaudio.com/wp-content/uploads/2018/08/Equinox-1-for-Web-1024x1024.jpg",
+                    "https://campfireaudio.com/wp-content/uploads/2018/08/Equinox-2-for-Web-1024x1024.jpg",
+                    "https://campfireaudio.com/wp-content/uploads/2018/08/Campfire-Custom-Beta-with-Cable-1024x1024.jpg",
+                    "https://campfireaudio.com/wp-content/uploads/2018/08/Equinox-2-for-Web-1024x1024.jpg",
+                    "https://campfireaudio.com/wp-content/uploads/2018/04/Atlas-Pure-Silver-Cable-1024x1024.jpg"
+                ],
+                "star": 3
+            },
+            "imgSrc": {
+                "srca": "https://campfireaudio.com/wp-content/uploads/2018/10/Black-and-White-Stars.jpg",
+                "srcb": "https://campfireaudio.com/wp-content/uploads/2019/03/Equinox-for-Web-1024x1024.jpg"
+            },
+            "price": "$1499.00",
+            "id": 3
+        },
+        {
+            "title": "Atlas",
+            "description": "Gigantic and Fantastic Sound.Stainless Steel Body. Full Range 10mm A.D.L.C. Diaphragm Dynamic Driver. Designed and Assembled in Portland, Oregon USA.",
+            "review": {
+                "title": [
+                    "Gigantic and Fantastic Sound.",
+                    "New Stainless Steel Body",
+                    "New A.D.L.C. Diaphragm Dynamic Driver",
+                    "3D Modeled Awesomeness",
+                    "New Pure Silver Cable"
+                ],
+                "slogan": [
+                    "Andromeda combines all of the best elements of our earphone design experience into a single set of earphones. The result is a remarkable and unique sounding earphone with superior top-to-bottom coherence.",
+                    "A truly massive sound. We’ve expanded our ADLC driver to a mighty 10mm and enclosed it in Stainless Steel – Atlas is a full range powerhouse.",
+                    "Expanding on the commercial and critical success of Vega, we returned to an A.D.L.C. diaphragm design for Atlas and super sized it to a new 10mm driver; up from 8.5mm utilized in Vega. For a quick background, A.D.L.C. (Amorphous Diamond-Like Carbon) is the hybrid of diamond and graphite carbon. It is a non-crystalline diamond. It is a material that has low density and high rigidity, important factors when considering diaphragm materials.",
+                    "Tuning a high fidelity earphone is both an art and a science. To make something really special many critical factors need to intersect perfectly.",
+                    "We’ve created an all new pure silver cable for Atlas that allows you to get the very best sound possible from your earphone, right out of the box. The pure silver conductors provide additional resolution and refinement to an already exceptional sound."
+                ],
+                "comment": [
+                    "The result is a terrific sounding earphone with a dynamic signature that will convert even the most jaded listener to an Atlas fan. Designed and Assembled in Portland, Oregon USA.",
+                    "The weight of our stainless steel earphones in your hand feels good. The durability of stainless steel gives you peace of mind in daily use, knowing these are going to last.",
+                    "In designing a dynamic driver, the diaphragm material used should be as rigid as possible to provide a wider range of frequency responses and lower distortion. Additionally, the density of the diaphragm material should also be as low as possible in order to increase fidelity. The 10mm A.D.L.C. diaphragm driver at the heart of Atlas achieves these goals; superior fidelity, excellent frequency response, and low distortion.",
+                    "This is why we choose to design and iterate with 3D modeled parts and take those parts into our final builds. It gives us an unprecedented level of control to capture the sound we’re trying to achieve. We think you’ll appreciate this refinement when you hear them yourself.",
+                    "This cable is also wound with a twist that reduces tangling and microphonics improving your daily experience with Atlas."
+                ],
+                "imgSrc": [
+                    "https://campfireaudio.com/wp-content/uploads/2018/04/Atlas-Big-Size-2-1400x1400.jpg",
+                    "https://campfireaudio.com/wp-content/uploads/2018/04/Atlas-Big-Size-1-1400x1400.jpg",
+                    "https://campfireaudio.com/wp-content/uploads/2018/04/DSCF1627-1024x768.jpg",
+                    "https://campfireaudio.com/wp-content/uploads/2018/04/Atlas-Big-Size-2-1400x1400.jpg",
+                    "https://campfireaudio.com/wp-content/uploads/2018/04/Atlas-Pure-Silver-Cable-1400x1400.jpg"
+                ],
+                "star": 4
+            },
+            "imgSrc": {
+                "srca": "https://campfireaudio.com/wp-content/uploads/2018/04/Pink-and-Blue-Stars.jpg",
+                "srcb": "https://campfireaudio.com/wp-content/uploads/2018/04/Atlas-with-Title-for-web-645x645.jpg"
+            },
+            "price": "$1299.00",
+            "id": 4
+        },
+        {
+            "title": "IO",
+            "description": "Remarkable. Refined. Refreshing. Designed and Assembled in Portland, Oregon USA",
+            "review": {
+                "title": [
+                    "Remarkable. Refined.",
+                    "Refresh!",
+                    "",
+                    "Insides that Count",
+                    "New Cable + New Case"
+                ],
+                "slogan": [
+                    "IO is a special earphone. It is a remarkably expressive earphone. It delivers a refined sound that is also exciting.",
+                    "Based on our classic Campfire Audio profile, Io features a ‘Garnet’ Red Anodized Finish with 24K Gold Plated Screws. Stainless Steel Spout and Machined Aluminum Body are paired with a custom beryllium / copper insulated round MMCX connector.",
+                    "",
+                    "Driver count has never been as especially important to our designs as the proper selection and implementation of particular drivers. When using more than a single driver, it is as much about the synergy between drivers as it is about any one particular driver.",
+                    "Building from our Silver Plated Copper Litz wire conductors and our popular tangle-resistant twisted cable weave, we’ve added a new stylish Smoky jacket to compliment the unique finish of our new line of earphones. A new light-weight molded ear-hook design replaces the memory wire. The result is a light weight cable that is a pleasure to use everyday."
+                ],
+                "comment": [
+                    "Many more iterations and unique prototypes were made of Io than any other earphone in Campfire Audio’s line up to date. It was a journey to fine tune the sound and get it right. The result is an earphone that we can proudly stand next our best-known models. We feel confident you will enjoy the result of this effort.",
+                    "Each earphone is assembled by hand in our workshop in Portland, Oregon by our team of highly skilled craftspeople.",
+                    "",
+                    "Staying true to the Campfire Audio design philosophy “Less is More” and using fewer, higher quality components is ideal to achieve a more a musical presentation. Using an oversized woofer BA as a foundation and then pairing that with a small tweeter, IO came together. Our Tuned Acoustic Expansion Chamber (T.A.E.C.™) provides that natural and open top-end extension people have come to expect from Campfire Audio earphones.",
+                    "Our exciting new premium ‘Bordeaux’ leather protective zipper case is an update to our standard leather earphone case. Luxurious leather surrounds a substantial and protective rubber barrier that ensures that your earphones will remain safe while in transit. The interior is a dense faux wool lining that preserves the anodized finish of your earphones. Each case is made in Portugal by a small team of skilled crafts people that share our commitment to quality."
+                ],
+                "imgSrc": [
+                    "https://campfireaudio.com/wp-content/uploads/2019/04/IO-Front-Site-Images-1462-1024x1024.png",
+                    "https://campfireaudio.com/wp-content/uploads/2019/04/IO-Main-Site-Images-1462-1024x1024.png",
+                    "https://cdn.shopify.com/s/files/1/1203/1446/products/IO-New-Small_2000x.jpg?v=1556288799",
+                    "https://campfireaudio.com/wp-content/uploads/2019/04/IO-Backs-Site-Images-1462-1024x1024.png",
+                    "https://campfireaudio.com/wp-content/uploads/2019/04/Smoky-Grey-Cable-for-Web-1024x1024.png"
+                ],
+                "star": 3
+            },
+            "imgSrc": {
+                "srca": "https://campfireaudio.com/wp-content/uploads/2019/04/Red-Background-For-Front.png",
+                "srcb": "https://campfireaudio.com/wp-content/uploads/2019/04/IO-for-Front-Page-1-1024x430.png"
+            },
+            "price": "$299.00",
+            "id": 5
+        },
+        {
+            "title": "Polaris",
+            "description": "All new hybrid design. Spacious highs. Bombastic bass. Designed and Assembled in Portland, Oregon USA.",
+            "review": {
+                "title": [
+                    "Powerful Hybrid Design",
+                    "True ‘Cerulean’ Blue",
+                    "",
+                    "Insight into the Inside",
+                    "Introducing Super Litz"
+                ],
+                "slogan": [
+                    "This is an all new Polaris. The only thing that remains from the past is hybrid design and the striking blue finish.",
+                    "Each earphone is assembled by hand in our workshop by our team of highly skilled craftspeople.",
+                    "",
+                    "Polaris features 2 unique proprietary acoustic technologies; our T.A.E.C.™ and our Polarity Tuned Chamber™. This allows us tune and design for each driver to ensure maximum sonic efficiency while maintaining cohesive presentation.",
+                    "An exceptional earphone deserves an exceptional cable"
+                ],
+                "comment": [
+                    "Spacious highs and mids open up over top of rich and impactful bass. Polaris boasts a bombastic sound ideal for modern music. It delivers a listing experience that is simultaneously warm, natural, and detailed. This combination invites a serious listen. Treat yourself!",
+                    "Based on our classic Campfire Audio profile, Polaris features a’Cerulean’ Blue Anodized Finish with Black PVD Screws. Black Stainless Steel Spout and Machined Aluminum Body are paired with a custom beryllium / copper insulated round MMCX connector. This is an earphone that is meant to last.",
+                    "",
+                    "Our Polarity Tuned Chamber™ combines with a 9.2mm dynamic driver and does the heavy lifting while our T.A.E.C.™ paired with a balanced armature to present classic Campfire Audio sparkle.",
+                    "Our new Super Litz cable is made from four large conductors of Silver-plated Copper Litz wire. Each conductor is individually comprised of a selected set of particular diameter strands. The Super Litz cable is the perfect balance of physical gauge and performance. The cable is terminated with our custom beryllium/copper MMCX connectors and over-molded 3.5mm plug. This cable brings out the best in Solaris."
+                ],
+                "imgSrc": [
+                    "https://campfireaudio.com/wp-content/uploads/2019/04/Polaris-Fronts-Site-Images-1462-1024x1024.png",
+                    "https://campfireaudio.com/wp-content/uploads/2019/04/Polaris-1-Site-Images-1462-1024x1024.png",
+                    "https://theheadphonelist.com/wp-content/uploads/2017/09/DSC04816.jpg",
+                    "https://campfireaudio.com/wp-content/uploads/2019/04/Polaris-Back-Site-Images-1462-1024x1024.png",
+                    "https://campfireaudio.com/wp-content/uploads/2018/09/Super-Litz-for-Solaris-CFA-1024x1024.jpg"
+                ],
+                "star": 4
+            },
+            "imgSrc": {
+                "srca": "https://campfireaudio.com/wp-content/uploads/2019/04/BLUE-Background-for-Front.png",
+                "srcb": "https://campfireaudio.com/wp-content/uploads/2019/04/Polaris-2-Front-Page-1-1024x418.png"
+            },
+            "price": "$499.00",
+            "id": 6
+        },
+        {
+            "title": "Cascade",
+            "description": "Unmistakably Campfire Audio Sound 42mm Beryllium PVD Diaphragm Dynamic Drivers Aluminum and Stainless Steel Construction",
+            "review": {
+                "title": [
+                    "Introducing: Our Headphone",
+                    "42mm Beryllium PVD Driver",
+                    "",
+                    "Premium Materials, Durable Build",
+                    "Your HiFi Companion"
+                ],
+                "slogan": [
+                    "Cascade is a culmination of a 3 year engineering effort to bring our signature sound to a headphone.",
+                    "Cascade delivers exceptional musicality and openness. It has a soundstage that expands well beyond the listening space. It possesses sonic traits not found in typical ‘closed-back’ headphone designs.",
+                    "",
+                    "Creating a portable audiophile headphone requires using materials that are up for the job. Light weight forged and machined aluminum cups paired with stainless steel components. This provides added strength in the places where you need it most.",
+                    "Designed with portable use in mind, Cascade is a durable headphone for use at home and on the go. The more you listen, the more you’ll find you’ll want to keep it with you, where ever that might be."
+                ],
+                "comment": [
+                    "The result is a portable, closed-back headphone that sounds and performs like it’s open. Even better; it has the unique sound you expect from a Campfire Audio headphone.",
+                    "Cascade delivers exceptional musicality and openness. It has a soundstage that expands well beyond the listening space. It possesses sonic traits not found in typical ‘closed-back’ headphone designs.",
+                    "It has high frequency extension that makes cymbals sparkle and expand past your listening horizon. Mids are fully resolved and uncolored. And the bass is extended and balanced; rich in texture and well defined.",
+                    "",
+                    "Premium sheepskin ear pads are not only comfortable, but they provide excellent isolation. Listen to your favorite track on the bus without disturbing your fellow passengers. Escape office boredom without complaints.",
+                    "Cascade has excellent high-frequency extension; cymbals sparkle and expand on a wide soundstage. Mids are clear and uncolored. The bass response is special; rich in texture and well defined. All qualities you won’t find in a typical closed back design."
+                ],
+                "imgSrc": [
+                    "https://campfireaudio.com/wp-content/uploads/2017/10/Cascade-Image-2-1024x1024.jpg",
+                    "https://campfireaudio.com/wp-content/uploads/2017/10/Cascade-Image-5-1024x1024.jpg",
+                    "https://s314.siliconimg.com/kb/content_images/2018/02/08/1537932/1518099149_801.jpg?imageView2/2/w/600",
+                    "https://campfireaudio.com/wp-content/uploads/2017/10/Cascade-Image-4-1024x1024.jpg",
+                    "https://campfireaudio.com/wp-content/uploads/2017/10/Cascade-Image-6-1024x1024.jpg"
+                ],
+                "star": 2
+            },
+            "imgSrc": {
+                "srca": "https://campfireaudio.com/wp-content/uploads/2018/04/Cascade-Star-Pattern.jpg",
+                "srcb": "https://campfireaudio.com/wp-content/uploads/2018/04/Cascade-with-Title-for-Web-1024x1024.jpg"
+            },
+            "price": "$799.00",
+            "id": 7
+        }
+    ],
+    "review": []
+}
