@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "9657a822a24f39cc6c3d",
+    "revision": "da67e1fa27d4c3444d84",
     "url": "/campfire/static/css/main.6c6f9d93.chunk.css"
   },
   {
-    "revision": "9657a822a24f39cc6c3d",
-    "url": "/campfire/static/js/main.9c5d60c9.chunk.js"
+    "revision": "da67e1fa27d4c3444d84",
+    "url": "/campfire/static/js/main.f9233233.chunk.js"
   },
   {
     "revision": "5721a131925ec72d0029",
@@ -28,7 +28,7 @@ self.__precacheManifest = [
     "url": "/campfire/static/media/star.b6c8c3de.svg"
   },
   {
-    "revision": "46cda6ecad94438ce28deae8bc35451b",
+    "revision": "54b79c9f100d55cb413a2dcddb8670cf",
     "url": "/campfire/index.html"
   }
 ];
